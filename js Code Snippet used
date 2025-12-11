@@ -1,0 +1,11 @@
+const month = String(inputData.date_month).padStart(2, '0');
+const day = String(inputData.date_day).padStart(2, '0');
+const year = inputData.date_year;
+
+const dateStr = `${month}${day}${year}`;
+
+return {
+  ac: `ABC-AC-DataSet-${dateStr}.xlsx`
+//  eg: `ABC-EG-DataSet-${dateStr}.xlsx`,
+//  fl: `ABC-FL-DataSet-${dateStr}.xlsx`
+};
